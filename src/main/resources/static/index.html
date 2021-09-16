@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Hjem</title>
+    <script src="index.js"></script>
+    <script src="Valider.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>Logg inn </h1>
+        <div class="col-md-4">
+        <form class="form">
+            <div class="form-group">
+                <label for="brukernavn">Brukernavn</label>
+                <input id="brukernavn" type="text" class="form-control" onchange="validerBrukernavn(this.value)"/>
+                <span id="feilBrukernavn" style="color: red"></span>
+            </div>
+            <div class="form-group">
+                <label for="passord">Passord</label>
+                <input id="passord" type="text" class="form-control" onchange="validerPassord(this.value)"/>
+                <span id="feilPassord" style="color: red"></span>
+            </div>
+        </form>
+            <button class="btn btn-primary" onclick="validerL()">Logg inn</button>
+            <span id="feilLogginn" style="color: red"></span>
+            <button class="btn btn-success" onclick="kryp()">Krypter passord</button>
+            <span id="krypterM" style="color: red"></span>
+        </div>
+        <div class="col-md-8">
+        <h3>Alle bilene:</h3>
+        <div id="bilene" class="table-responsive"></div>
+    </div>
+
+    </div>
+</div>
+
+</body>
+</html>

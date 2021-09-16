@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Endre</title>
+    <script src="endre.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Endre kunde</h1>
+            <h1>Motorvognregister</h1>
+            <form class="form">
+                <input type="hidden" id="personnr">
+
+                <div class="form-group">
+                    <label for="navn">Navn</label>
+                    <input type="text" class="form-control" id="navn"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="adresse">Adresse</label>
+                    <input type="text" class="form-control" id="adresse"/>
+                </div>
+
+                <div class="form-group">
+                    <input type="button" value="Endre" class="btn btn-primary" onclick="EndreEnMotorvogn()"/>
+                </div>
+
+            </form>
+</div>
+
+</body>
+</html>
